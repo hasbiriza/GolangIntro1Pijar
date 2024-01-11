@@ -4,6 +4,16 @@ import (
 	"fmt"
 )
 
+func cekKondisi(tinggiSegitiga int) int {
+	for i := tinggiSegitiga; i > 0; i-- {
+		for j := 1; j <= i; j++ {
+			fmt.Print(j)
+		}
+		fmt.Print("\n")
+	}
+	return tinggiSegitiga
+}
+
 func main() {
 	//validasi
 	tinggiSegitiga := 5
@@ -12,10 +22,7 @@ func main() {
 		return
 	}
 	//Cek Kondisi
-	for i := tinggiSegitiga; i > 0; i-- {
-		for j := 1; j <= i; j++ {
-			fmt.Print(j)
-		}
-		fmt.Print("\n")
-	}
+
+	cekKondisi(5)
+
 }
